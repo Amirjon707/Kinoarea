@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/cinema 1.png" type="image/x-icon">
+    <title>Kinoarea</title>
+</head>
+
+<body>
+    <section id="img">
+        <img id="bg_img" src="./img/А 1.png" alt="">
+        <header>
+            <div class="containt">
+                <div class="row header d-flex justify-content-between align-items-center">
+                    <div class="col-2 logo_s row flex-column">
+                        <div class="logo d-flex align-items-center">
+                            <img src="./img/cinema 1.png" alt="">
+                            <h4>Kino<span>area</span></h4>
+                        </div>
+                        <div class="brand_link d-flex">
+                            <i class="fa-brands fa-vk"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="col-2 d-none btn_search d-flex justify-content-center align-items-center">
+                        <div class="bars d-none">
+                            <button type="button" class="btn btn-light"><i class="fa-solid fa-bars"></i></button>
+                        </div>
+                        <button type="button" class="btn btn-light"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="col-2 d-none btn_submit justify-content-center align-items-center">
+                        <button type="button" class="btn btn-primary">войти</button>
+                    </div>
+                    <div class="menu col-8 menu_s text-light align-items-center d-flex justify-content-evenly">
+                        <p>Афиша</p>
+                        <p>Медиа</p>
+                        <p>Фильмы</p>
+                        <p>Актёры</p>
+                        <p>Новости</p>
+                        <p>Подборки</p>
+                        <p>Категории</p>
+                    </div>
+                    <div class="col-1 buttons d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-light"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <button type="button" class="btn btn-primary">войти</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="now">
+            <div class="containt">
+                <div class="row n_cinema">
+                    <div class="col-lg-12 n_cinema_list d-flex align-items-center justify-content-between">
+                        <h2 class="text-light">Сейчас в кино</h2>
+                        <i class="fa-solid fa-bars d-none text-light"></i>
+                        <div class="line"></div>
+                        <div class="kategoriya none text-dark-emphasis d-flex justify-content-between">
+                            <p class="text-light">Все</p>
+                            <p>Боевики</p>
+                            <p>Приключения</p>
+                            <p>Комедии</p>
+                            <p>Фантастика</p>
+                            <p>Триллеры</p>
+                            <p>Драма</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between cards">
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 1.png" alt="">
+                            <div class="grade">6.70</div>
+                        </div>
+                        <p>Побег из претории</p>
+                        <h6>триллер</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/Фото.png" alt="">
+                            <div class="grade">8.50</div>
+                            <button type="button" class="btn btn-light center_btn">Карточка фильма</button>
+                        </div>
+                        <p>Джокер</p>
+                        <h6>триллер, драма, криминал</h6>
+                    </div>
+                    <div class="col-6 none col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 3.png" alt="">
+                            <div class="grade">6.70</div>
+                        </div>
+                        <p>Звёздные войны: Скайуокер. Восход</p>
+                        <h6>фантастика, фэнтези, боевик, приключения</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 4.png" alt="">
+                            <div class="grade">8.00</div>
+                        </div>
+                        <p>Джентльмены</p>
+                        <h6>боевик, комедия, криминал</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 5.png" alt="">
+                            <div class="grade">8.10</div>
+                        </div>
+                        <p>Ford против Ferrari</p>
+                        <h6>биография, спорт, драма, боевик</h6>
+                    </div>
+                    <div class="col-6 none col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 6.png" alt="">
+                            <div class="grade red">4.90</div>
+                        </div>
+                        <p>3022</p>
+                        <h6>фантастика, триллер</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 7.png" alt="">
+                            <div class="grade">6.20</div>
+                        </div>
+                        <p>Хищные птицы: Потрясающая история Харли Квин</p>
+                        <h6>боевик, криминал, комедия</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 8.png" alt="">
+                            <div class="grade">6.90</div>
+                        </div>
+                        <p>Плохие парни навсегда</p>
+                        <h6>боевик, комедия, криминал</h6>
+                    </div>
+                    <div class="col-6 none col-lg-3 d-none col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 9.png" alt="">
+                            <div class="grade">7.80</div>
+                        </div>
+                        <p>История игрушек 4</p>
+                        <h6>Мультфильм, фэнтези, комедия, приключения ...</h6>
+                    </div>
+                </div>
+                <div class="row cards_btn">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-light">Все новинки</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="trailers">
+        <div class="containt">
+            <div class="heading row d-flex justify-content-between align-items-center">
+                <div class="col-lg-8">
+                    <h2>Новые трейлеры</h2>
+                </div>
+                <div class="col-lg-2 justify-content-end d-flex align-items-center">
+                    <p>Все трейлеры</p> &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="main_trailer row justify-content-between align-items-center">
+                <div class="col-12 position-relative">
+                    <img width="100%" src="./img/2.png" alt="">
+                    <i class="fa-solid fa-play position-absolute text-light"></i>
+                </div>
+                <div class="more col-5 d-flex align-items-center">
+                    <h3 class="text-light">Форсаж 9</h3>
+                    <div class="send d-flex">
+                        <i class="fa-brands fa-vk"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div class="more2 col-2 d-flex justify-content-end align-items-center">
+                    <div class="like d-flex align-items-center flex-column justify-content-center">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <p>3 245</p>
+                    </div>
+                    <div class="dislike d-flex align-items-center flex-column justify-content-center">
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <p>420</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider row">
+                <div class="col-12 slider_line_bar">
+                    <div class="slider_line"></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 position-relative">
+                    <img width="100%" src="./img/new1.png" alt="">
+                    <i class="fa-solid fa-play position-absolute text-light"></i>
+                    <h5>Мулан</h5>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 position-relative">
+                    <img width="100%" src="./img/new2.png" alt="">
+                    <i class="fa-solid fa-play position-absolute text-light"></i>
+                    <h5>Форсаж 9</h5>
+                </div>
+                <div class="col-lg-3 col-md-3 none position-relative">
+                    <img width="100%" src="./img/new3.png" alt="">
+                    <i class="fa-solid fa-play position-absolute text-light"></i>
+                    <h5>Чёрная Вдова</h5>
+                </div>
+                <div class="col-lg-3 col-md-3 none position-relative">
+                    <img width="100%" src="./img/new4.png" alt="">
+                    <i class="fa-solid fa-play position-absolute text-light"></i>
+                    <h5>Тихое место 2</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular_film">
+        <div class="containt">
+            <div class="row heading">
+                <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                    <h2 class="text-light">Популярные фильмы</h2>
+                    <i class="fa-solid fa-bars d-none text-light"></i>
+                    <div class="line"></div>
+                    <div class="time list_none text-dark-emphasis d-flex justify-content-between">
+                        <p>Всё время</p>
+                        <p>2020</p>
+                        <p class="text-light">2019</p>
+                        <p>2018</p>
+                        <p>2017</p>
+                        <p>2016</p>
+                        <p>2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between cards">
+                <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                    <div class="img_film">
+                        <img class="foto" src="./img/popular1.png" alt="">
+                        <div class="grade">8.50</div>
+                    </div>
+                    <p>Джокер</p>
+                    <h6>Триллер, драма, криминал</h6>
+                </div>
+                <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                    <div class="img_film">
+                        <img class="foto" src="./img/image 9.png" alt="">
+                        <div class="grade">7.80</div>
+                    </div>
+                    <p>История игрушек 4</p>
+                    <h6>Мультфильм, фэнтези, комедия, приключения ...</h6>
+                </div>
+                <div class="none2 col-lg-3 col-md-4 d-flex flex-column">
+                    <div class="img_film">
+                        <img class="foto" src="./img/popular3png.png" alt="">
+                        <div class="grade">7.70</div>
+                    </div>
+                    <p>Однажды в… Голливуде</p>
+                    <h6>Драма, комедия</h6>
+                </div>
+                <div class="none col-lg-3 d-flex flex-column">
+                    <div class="img_film">
+                        <img class="foto" src="./img/popular.png" alt="">
+                        <div class="grade">7.10</div>
+                    </div>
+                    <p>Солнцестояние</p>
+                    <h6>Ужасы, триллер, драма</h6>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center text-light align-items-center">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p class="p">4/15</p><i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+    <section id="popular_actor">
+        <div class="containt">
+            <div class="row heading">
+                <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                    <h2 class="text-light">Популярные персоны</h2>
+                    <i class="fa-solid fa-bars d-none text-light"></i>
+                    <div class="time list_none text-dark-emphasis d-flex justify-content-between">
+                        <p>За год</p>
+                        <p>За месяц</p>
+                        <p class="text-light">За неделю</p>
+                    </div>
+                </div>
+            </div>
+            <div class="actors row justify-content-between">
+                <div class="col-lg-4 col-5 actor">
+                    <img src="./img/actor1.png" alt="">
+                    <div class="place">1-е место</div>
+                    <div class="info">
+                        <div class="name_f text-light">Квентин Тарантино</div>
+                        <div class="name_s">Quentin Tarantino</div>
+                        <div class="age">57 лет</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-5 actor">
+                    <img src="./img/actor2.png" alt="">
+                    <div class="place">2-е место</div>
+                    <div class="info">
+                        <div class="name_f text-light">Джейсон Стейтем</div>
+                        <div class="name_s">Jason Statham</div>
+                        <div class="age">52 лет</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 actor other_list d-flex flex-column justify-content-between">
+                    <div class="col-12">
+                        <div class="list_line"></div>
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="info_l col-5 d-flex flex-column">
+                            <div class="name_f text-light">Тинто Брасс</div>
+                            <div class="name_s_l">Tinto Brass</div>
+                            <div class="age_l">87 лет</div>
+                        </div>
+                        <div class="place_l col-3">
+                            <p>3-е место</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="list_line"></div>
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="info_l col-5 d-flex flex-column">
+                            <div class="name_f text-light">Джеки Чан</div>
+                            <div class="name_s_l">Jackie Chan</div>
+                            <div class="age_l">66 лет</div>
+                        </div>
+                        <div class="place_l col-3">
+                            <p>4-е место</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="list_line"></div>
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="info_l col-5 d-flex flex-column">
+                            <div class="name_f text-light">Том Харди</div>
+                            <div class="name_s_l">Tom Hardy</div>
+                            <div class="age_l">42 года</div>
+                        </div>
+                        <div class="place_l col-3">
+                            <p>5-е место</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="list_line"></div>
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="info_l col-5 d-flex flex-column">
+                            <div class="name_f f text-light">Акшай Кумар</div>
+                            <div class="name_s_l">Akshay Kumar</div>
+                            <div class="age_l">52 года</div>
+                        </div>
+                        <div class="place_l col-3">
+                            <p>6-е место</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="list_line_l"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="containt">
+            <div class="heading row d-flex justify-content-between align-items-center">
+                <div class="col-lg-8">
+                    <h2>Последние новости</h2>
+                </div>
+                <div class="col-lg-2 justify-content-center d-flex align-items-center">
+                    <p>Все новости</p> &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="row news flex-nowrap">
+                <div class="col-10 active_new">
+                    <img src="./img/news.png" alt="">
+                    <div class="blur2"></div>
+                    <div class="info_v d-flex justify-content-between align-items-center">
+                        <div class="data">15 Апр 2020</div>
+                        <div class="view"><i class="fa-regular fa-eye"></i></i> 242</div>
+                        <div class="comment"><i class="fa-regular fa-comment"></i> 14</div>
+                    </div>
+                    <div class="about">
+                        <h3>Не время умирать. Перенос релиза фильма</h3>
+                        <p>Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                            <br>спецификации современных стандартов, стремящиеся вытеснить традиционное производство,
+                            <br>нанотехнологии указаны как претенденты на роль ключевых факторов.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 new d-flex flex-column justify-content-between">
+                    <div class="row close_new">
+                        <div class="img1"></div>
+                        <div class="blur"></div>
+                        <div class="info_v d-flex justify-content-between align-items-center">
+                            <div class="data">15 Апр 2020</div>
+                        </div>
+                        <div class="about">
+                            <p>Как изменили Соника с <br>последнего анонса
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row close_new d-flex justify-content-center align-items-center">
+                        <div class="img2"></div>
+                        <div class="blur1"></div>
+                        <button type="button" class="btn btn-outline-light position-absolute">Читать новость</button>
+                    </div>
+                    <div class="row none2 close_new">
+                        <div class="img3"></div>
+                        <div class="blur"></div>
+                        <div class="info_v d-flex justify-content-between align-items-center">
+                            <div class="data">15 Апр 2020</div>
+                        </div>
+                        <div class="about">
+                            <p>От этой новости вы будете шокированы до завтра
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row none1 close_new">
+                        <div class="img4"></div>
+                        <div class="blur"></div>
+                        <div class="info_v d-flex justify-content-between align-items-center">
+                            <div class="data">13 Апр 2020</div>
+                        </div>
+                        <div class="about">
+                            <p>Вот это, конечно, да!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bg">
+        <section id="wait">
+            <div class="containt">
+                <div class="heading row d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h2>Ожидаемые новинки</h2>
+                    </div>
+                    <div class="col-2 slide justify-content-center d-flex align-items-center">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <p class="p">2/5</p><i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="wait row">
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 1.png" alt="">
+                        </div>
+                        <p>Побег из претории</p>
+                        <h6>14 мая 2020 в России</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/wait2.png" alt="">
+                        </div>
+                        <p>Прощай</p>
+                        <h6>14 мая 2020 в России</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 none2 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/wait3.png" alt="">
+                        </div>
+                        <p>Дружить по-русски!</p>
+                        <h6>21 мая 2020 в России</h6>
+                    </div>
+                    <div class="col-6 col-lg-3 none1 col-md-4 d-flex flex-column">
+                        <div class="img_film">
+                            <img class="foto" src="./img/wait4.png" alt="">
+                        </div>
+                        <p>Приди ко мне</p>
+                        <h6>21 мая 2020 в России</h6>
+                    </div>
+
+                    <div class="col-12 d-none justify-content-center d-flex align-items-center">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <p class="p">2/5</p><i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="money">
+            <div class="containt">
+                <div class="row heading">
+                    <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                        <div class="first d-flex align-items-center justify-content-between">
+                            <h2 class="text-light">Кассовые сборы</h2>
+                            <p class="text-light">13 марта — 15 марта</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="time list_none text-dark-emphasis d-flex justify-content-between">
+                            <p>Россия <span class="text-light">Весь мир</span>США и Канада</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m_card d-flex justify-content-start flex-nowrap align-items-center">
+                    <div
+                        class="col-xxl-2 col-md-4 col-6 d-flex m_box text-light justify-content-center align-items-center">
+                        <div class="img_film">
+                            <img class="foto first_ch" src="./img/money1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="name">1. Бладшот</p>
+                            <p class="budjet">$13 млн</p>
+                            <p class="earn">$15.1 млн за 4 недели</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-2 col-md-4 col-6 d-flex m_box text-light justify-content-center align-items-center">
+                        <div class="img_film">
+                            <img class="foto" src="./img/money2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="name">2. Вперёд</p>
+                            <p class="budjet">$6.8 млн</p>
+                            <p class="earn">$41.4 млн за 4 недели</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-2 col-md-4 col-6 d-flex m_box text-light justify-content-center align-items-center">
+                        <div class="img_film">
+                            <img class="foto" src="./img/money3.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="name">3. Человек - <br>невидимка</p>
+                            <p class="budjet">$6.2 млн</p>
+                            <p class="earn">$58.3 млн за 3 недели</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-2 col-md-4 col-6 d-flex m_box text-light justify-content-center align-items-center">
+                        <div class="img_film">
+                            <img class="foto second_ch" src="./img/news1_png.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="name">4. Соник в кино</p>
+                            <p class="budjet">$2.9 млн</p>
+                            <p class="earn">$15.1 млн за 4 недели</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-2 col-md-4 d-flex m_box none text-light justify-content-center align-items-center">
+                        <div class="img_film">
+                            <img class="foto" src="./img/image 4.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="name">5. Джентльмены</p>
+                            <p class="budjet">$1.8 млн</p>
+                            <p class="earn">$78.7 млн за 11 недель</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <div class="containt">
+                <div class="bg_img position-relative row justify-content-center align-items-center">
+                    <div class="col-12 z-1 logo d-flex justify-content-center align-items-center">
+                        <img src="./img/cinema 1.png" alt="">
+                        <h4 class="text-light m-0">Kinoarea</h4>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center flex-column align-items-center z-1 text-light">
+                        <h3>Подпишитесь на E-mail рассылку</h3>
+                        <p>Если хотиет быть в курсе последних новостей и новинок кино - <br>заполните форму ниже и
+                            оформите
+                            бесплатную E-mail рассылку!</p>
+                        <div class="form">
+                            <input type="text" id="input" placeholder="Введите свой E-mail адрес">
+                            <button type="button" class="btn btn-warning form_btn">Подписаться</button>
+                        </div>
+                        <div class="form_checkbox d-flex justify-content-center align-items-center">
+                            <input class="checkbox d-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <div class="f_checkbox d-inline-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-check position-absolute check_none"></i></div>
+                            <label for="flexCheckChecked m-0">
+                                Соглашаюсь на условия <a> политики конфиденциальности</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="blur1 position-absolute"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="containt">
+                <div class="d-flex flex-column justify-content-between align-items-center">
+                    <div class="brand_link d-flex justify-content-center">
+                        <i class="fa-brands fa-vk"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="list d-flex justify-content-center text-light">
+                        <p>Афиша</p>
+                        <p>Медиа</p>
+                        <p>Фильмы</p>
+                        <p>Актёры</p>
+                        <p>Новости</p>
+                        <p>Подборки</p>
+                        <p>Категории</p>
+                    </div>
+                    <div class="cop text-light">2020 © Kinoarea. Все права защищены</div>
+                    <div class="polit text-light"><a>Политика конфиденциальности</a></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <button type="button" class="btn fixed btn-dark"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
