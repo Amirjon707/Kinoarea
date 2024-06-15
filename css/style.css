@@ -22,6 +22,14 @@ h2 {
   font-size: 45px !important;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+#now {
+  margin-top: 50px !important;
+}
+
 #bg_img {
   width: 100vw;
   position: absolute;
@@ -34,7 +42,6 @@ body {
   position: relative;
   background: rgb(30, 37, 56);
   max-width: 100vw;
-  min-height: 100%;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden !important;
 }
@@ -84,10 +91,6 @@ body {
 }
 .kategoriya p {
   margin: 0 20px;
-}
-
-html {
-  height: 100% !important;
 }
 
 section {
@@ -163,6 +166,12 @@ section#img {
 
 #trailers {
   color: white;
+}
+#trailers .heading p {
+  margin: 0 !important;
+}
+#trailers .heading i {
+  margin: 0 0 0 10px !important;
 }
 #trailers .fa-play {
   top: 50%;
@@ -315,12 +324,15 @@ section#img {
 }
 
 #bg {
+  padding-top: 10px;
   background-color: #151A26 !important;
   height: 110%;
-  width: 100vw;
+  width: 100%;
+  margin-bottom: 0 !important;
 }
 
 #news {
+  margin-bottom: 10px !important;
   color: #fff;
 }
 #news .heading {
@@ -977,6 +989,13 @@ footer .polit {
     font-size: 13px;
     margin: 0 5px !important;
   }
+  .fixed {
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .containt {
@@ -996,6 +1015,20 @@ footer .polit {
   .header .btn_search {
     order: 1;
     justify-content: start !important;
+  }
+  .header .btn-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    font-size: 13px;
+  }
+  .header .btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 12px;
   }
   .header .btn_submit {
     order: 3;
@@ -1041,6 +1074,9 @@ footer .polit {
   #now .cards h6 {
     margin-bottom: 30px;
   }
+  #now .center_btn {
+    height: 60px;
+  }
   #now .none {
     display: none !important;
   }
@@ -1048,6 +1084,9 @@ footer .polit {
     display: block !important;
     margin: 0 20px 8px;
     font-size: 22px;
+  }
+  #trailers .heading p {
+    font-size: 15px !important;
   }
   #trailers .none {
     display: none;
@@ -1098,12 +1137,18 @@ footer .polit {
     flex-direction: row !important;
     margin: 0 !important;
   }
+  #popular_actor .actor {
+    padding: 0 !important;
+  }
+  #popular_actor .actor .place {
+    font-size: 10px;
+  }
   #popular_actor .actor .name_f {
-    font-size: 13px !important;
+    font-size: 11px !important;
   }
   #popular_actor .actor .name_s {
     color: rgba(255, 255, 255, 0.3490196078);
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
   #popular_actor .actor .name_s_l {
     color: #3B486B;
@@ -1115,7 +1160,7 @@ footer .polit {
   }
   #popular_actor .actor .age {
     color: #F2F60F;
-    font-size: 15px !important;
+    font-size: 12px !important;
     line-height: 20px !important;
   }
   #popular_actor .actor .age_l {
@@ -1123,6 +1168,10 @@ footer .polit {
     font-size: 12px !important;
     line-height: 16.66px !important;
     margin-top: 5px !important;
+  }
+  #popular_actor .other_list {
+    margin-top: 10px;
+    padding: 10px 20px !important;
   }
   #news .news {
     flex-direction: column;
@@ -1138,13 +1187,35 @@ footer .polit {
   #news .active_new {
     width: 100%;
   }
+  #news .active_new .info_v {
+    font-size: 10px !important;
+  }
+  #news .active_new h3 {
+    font-size: 20px !important;
+  }
+  #news .active_new p {
+    font-size: 13px;
+    line-height: 13px;
+  }
   #news .close_new {
     height: auto;
     width: 47% !important;
   }
+  #news .close_new .info_v {
+    top: 8%;
+    font-size: 10px !important;
+  }
+  #news .close_new p {
+    font-size: 15px;
+  }
   #news .none1,
   #news .none2 {
     display: none;
+  }
+  #news .d-none {
+    line-height: 25px !important;
+    font-size: 20px !important;
+    display: block !important;
   }
   #news .img1,
   #news .img2 {
@@ -1218,5 +1289,12 @@ footer .polit {
   }
   footer .list {
     flex-direction: column !important;
+  }
+  .fixed {
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

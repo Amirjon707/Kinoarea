@@ -23,6 +23,14 @@ h2 {
     font-size: 45px !important;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+#now {
+    margin-top: 50px !important;
+}
+
 #bg_img {
     width: 100vw;
     position: absolute;
@@ -35,7 +43,6 @@ body {
     position: relative;
     background: rgb(30, 37, 56);
     max-width: 100vw;
-    min-height: 100%;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden !important;
 }
@@ -92,10 +99,6 @@ body {
     p {
         margin: 0 20px;
     }
-}
-
-html {
-    height: 100% !important;
 }
 
 section {
@@ -179,6 +182,17 @@ section {
 }
 
 #trailers {
+
+    .heading {
+        p {
+            margin: 0 !important;
+        }
+
+        i {
+            margin: 0 0 0 10px !important;
+        }
+    }
+
     .fa-play {
         top: 50%;
         left: 50%;
@@ -376,12 +390,15 @@ section {
 }
 
 #bg {
+    padding-top: 10px;
     background-color: #151A26 !important;
     height: 110%;
-    width: 100vw;
+    width: 100%;
+    margin-bottom: 0 !important;
 }
 
 #news {
+    margin-bottom: 10px !important;
     color: #fff;
 
     .heading {
@@ -1262,6 +1279,14 @@ footer {
             margin: 0 5px !important;
         }
     }
+
+    .fixed {
+        width: 50px !important;
+        height: 50px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1285,6 +1310,22 @@ footer {
         .btn_search {
             order: 1;
             justify-content: start !important;
+        }
+
+        .btn-light {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10px;
+            font-size: 13px;
+        }
+
+        .btn-primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            font-size: 12px;
         }
 
         .btn_submit {
@@ -1347,6 +1388,10 @@ footer {
             }
         }
 
+        .center_btn {
+            height: 60px;
+        }
+
         .none {
             display: none !important;
         }
@@ -1359,6 +1404,13 @@ footer {
     }
 
     #trailers {
+
+        .heading {
+            p {
+                font-size: 15px !important;
+            }
+        }
+
         .none {
             display: none;
         }
@@ -1426,21 +1478,24 @@ footer {
         }
 
         .actor {
+            padding: 0 !important;
+
+            .place {
+                font-size: 10px;
+            }
+
             .name_f {
-                font-size: 13px !important;
-                // line-height: 20.78px !important;
+                font-size: 11px !important;
             }
 
             .name_s {
                 color: #FFFFFF59;
-                font-size: 12px !important;
-                // line-height: 33.45px !important;
+                font-size: 10px !important;
             }
 
             .name_s_l {
                 color: #3B486B;
                 font-size: 10px !important;
-                // line-height: 15.35px !important;
             }
 
             .place_l {
@@ -1452,7 +1507,7 @@ footer {
 
             .age {
                 color: #F2F60F;
-                font-size: 15px !important;
+                font-size: 12px !important;
                 line-height: 20px !important;
             }
 
@@ -1462,6 +1517,11 @@ footer {
                 line-height: 16.66px !important;
                 margin-top: 5px !important;
             }
+        }
+
+        .other_list {
+            margin-top: 10px;
+            padding: 10px 20px !important;
         }
 
     }
@@ -1481,10 +1541,32 @@ footer {
         }
 
         .active_new {
+            .info_v {
+                font-size: 10px !important;
+            }
+
             width: 100%;
+
+            h3 {
+                font-size: 20px !important;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 13px;
+            }
         }
 
         .close_new {
+            .info_v {
+                top: 8%;
+                font-size: 10px !important;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
             height: auto;
             width: 47% !important;
         }
@@ -1492,6 +1574,12 @@ footer {
         .none1,
         .none2 {
             display: none;
+        }
+
+        .d-none {
+            line-height: 25px !important;
+            font-size: 20px !important;
+            display: block !important;
         }
 
         .img1,
@@ -1502,6 +1590,7 @@ footer {
         .img2 {
             background-position: center !important;
         }
+
     }
 
     #wait {
@@ -1600,5 +1689,13 @@ footer {
         .list {
             flex-direction: column !important;
         }
+    }
+
+    .fixed {
+        width: 30px !important;
+        height: 30px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
